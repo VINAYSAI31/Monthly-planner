@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-Day Planner - Manage Tasks</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white text-center">
+                <h2 id="subjectTitle" class="mb-0">Task Management</h2>
+            </div>
+            
+            <!-- Progress Bar Moved to the Top -->
+            <div class="progress my-4" style="height: 25px;">
+                <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="taskInput">Add New Task:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="taskInput" placeholder="Enter your task">
+                        <div class="input-group-append">
+                            <button id="addTaskButton" class="btn btn-primary">
+                                <i class="fas fa-plus"></i> Add Task
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <ul id="taskList" class="list-group mb-4"></ul>
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-secondary mt-3" onclick="window.location.href='index.html'">Back to Subject Selection</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
